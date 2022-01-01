@@ -1,0 +1,22 @@
+/*скрытая прокрутка по вертикали для всех браузеров*/
+html, body {
+    overflow: hidden;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    overflow-y: scroll;
+    width: calc(100% + 20px);
+}
+
+
+/*для webkit браузеров*/
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/* ie 10+ */
+html { -ms-overflow-style: none; }
